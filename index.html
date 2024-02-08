@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Conversor de Unidades</h2>
+        <form>
+            <div class="input-group">
+                <label for="">Digite a quantidade: </label>
+                <input type="number" name="inValor" id="inValor">
+            </div>
+            <div class="input-group">
+                <label for="de">De:</label>
+                <select name="de" id="de">
+                    <option value="m">Metro(s)</option>
+                    <option value="k">Quilômetro(s)</option>
+                    <option value="c">Centrímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="para">Para:</label>
+                <select name="para" id="para">
+                    <option value="m">Metro(s)</option>
+                    <option value="k">Quilômetro(s)</option>
+                    <option value="c">Centrímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+            <input type="submit" value="Converter">
+        </form>
+        <div class="input-group">
+            <label for="out">Resultado:</label>
+            <input type="text"id="out"  name="out"readonly >
+        </div>
+        <div id="menssagem"></div>
+    </div>
+</body>
+
+</html>
